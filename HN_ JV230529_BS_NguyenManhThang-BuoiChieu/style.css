@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  margin-top: 3%;
+}
+
+.form {
+  flex-basis: 30%;
+  border: 3px solid #333;
+  padding: 30px;
+}
+
+.show-data {
+  flex-basis: 70%;
+  border: 3px solid #333;
+  border-left: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.form-title,
+.info-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.form-item {
+  padding-bottom: 10px;
+}
+
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input {
+  outline: none;
+}
+
+.check-item {
+  flex-basis: 30%;
+  display: flex;
+  gap: 2px;
+}
+
+.label {
+  margin-bottom: 5px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.submit {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: crimson;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 2px 2px 2px #99999985;
+  cursor: pointer;
+}
+
+.submit:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-4px);
+}
+
+table {
+  width: 100%;
+  border: 2px solid #333;
+  border-collapse: collapse;
+  background: rgba(187, 185, 189, 0.329);
+}
+
+th,
+td {
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+.td-btn {
+  padding: 15px 0;
+  text-align: center;
+}
+
+td button {
+  border: none;
+  color: #fff;
+  background: rgb(20, 120, 220);
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #99999985;
+  cursor: pointer;
+}
+
+td button:hover {
+  transition: transform 0.2s ease;
+  transform: translateY(-3px);
+}
+
+.edit {
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+.delete {
+  padding: 5px 13px;
+}
+
+.sort-btn-box {
+  margin-bottom: 20px;
+}
+
+.sort-btn {
+  padding: 10px;
+  border: none;
+  background: rgb(20, 120, 220);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #99999985;
+  cursor: pointer;
+}
+
+.sort-btn:hover {
+  transition: transform 0.2s ease;
+  transform: translateY(-3px);
+}
+
+.search-box {
+  position: absolute;
+  top: 100px;
+  right: 15px;
+}
+
+.input-text {
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  padding: 5px 10px;
+  background: transparent;
+}
+
+#search {
+  background-image: url(https://www.w3schools.com/css/searchicon.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-right: 23px;
+}
+
+.error-message {
+  padding-top: 0.2rem;
+  font-style: italic;
+  color: crimson;
+}

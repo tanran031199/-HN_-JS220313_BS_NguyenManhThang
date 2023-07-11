@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="main-content">
+          <div class="content">
+            <form class="form">
+              <div class="form-title">
+                <h2>Information Form</h2>
+              </div>
+
+              <div class="form-item">
+                <p class="label">
+                  <label for="full-name">Họ và Tên</label>
+                </p>
+                <input
+                  class="input-text"
+                  id="full-name"
+                  type="text"
+                  placeholder="VD: Nguyen Van A"
+                />
+
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-item">
+                <p class="label">
+                  <label for="email">Email</label>
+                </p>
+                <input
+                  class="input-text"
+                  id="email"
+                  type="email"
+                  placeholder="VD: example@gmail.com"
+                />
+
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-item">
+                <p class="label">
+                  <label for="phone-number">Số điện thoại</label>
+                </p>
+
+                <input class="input-text" id="phone-number" type="tel" />
+
+                <p class="error-message"></p>
+              </div>
+
+              <div class="form-item">
+                <p class="label">
+                  <label for="town">Quê quán</label>
+                </p>
+
+                <input
+                  class="input-text"
+                  id="town"
+                  type="text"
+                  placeholder="VD: Ha Noi"
+                />
+
+                <p class="error-message"></p>
+              </div>
+
+              <div class="gender-box">
+                <p class="label">Gender</p>
+                <input
+                  name="gender"
+                  id="male"
+                  type="radio"
+                  value="Nam"
+                  checked
+                />
+                <label for="male">Nam</label>
+
+                <input name="gender" id="female" type="radio" value="Nu" />
+                <label for="female">Nữ</label>
+              </div>
+
+              <button class="submit">Thêm</button>
+            </form>
+
+            <div class="show-data">
+              <div class="info-title">
+                <h2>Students Information</h2>
+              </div>
+
+              <div class="sort-btn-box">
+                <button class="sort-btn">
+                  Sort Name in alphabetical order
+                </button>
+              </div>
+
+              <div class="search-box">
+                <input
+                  class="input-text"
+                  id="search"
+                  type="text"
+                  placeholder="Search Name..."
+                />
+              </div>
+
+              <table class="table"></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
