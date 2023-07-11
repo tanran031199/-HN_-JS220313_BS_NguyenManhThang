@@ -128,11 +128,11 @@ function addItem(e) {
   let phoneError = inputPhone.parentElement.querySelector(".error-message");
   let emailError = inputEmail.parentElement.querySelector(".error-message");
 
-  if (!checkMail) {
+  if (!checkMail && inputEmail.value !== "") {
     emailError.innerText = `Vui lòng nhập đúng định dạng ${inputEmail.id}`;
   }
 
-  if (!checkPhone) {
+  if (!checkPhone && inputPhone.value !== "") {
     phoneError.innerText = `Vui lòng nhập đúng định dạng ${inputPhone.id}`;
   }
 
